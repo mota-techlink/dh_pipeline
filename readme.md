@@ -3,6 +3,7 @@
 
 <div align="left">
   <!-- Keep these links. Translations will automatically update with the README. -->
+  <a href="https://zdoc.app/zh/jedi9t/dh_pipeline">中文</a> | 
   <a href="https://zdoc.app/de/jedi9t/dh_pipeline">Deutsch</a> | 
   <a href="https://zdoc.app/es/jedi9t/dh_pipeline">Español</a> | 
   <a href="https://zdoc.app/fr/jedi9t/dh_pipeline">Français</a> | 
@@ -14,9 +15,9 @@
 </div>
 
 
-## 1. Enviroment preparation
+## 1. Environment preparation
 
-> Create conda is strongly recommending
+> It is strongly recommended to use conda
 ```bash
 mkdir dh_pipeline
 cd dh_pipeline
@@ -25,7 +26,7 @@ conda activate dh_pipeline
 ```
 
 ## 2. Translation and voice generating
->Install Goolge deep translate and Microsoft EdgeTTS to translate conent from original languate to other language then generate sound accordingly.
+>Install Google Deep Translator and Microsoft EdgeTTS to translate content from the original language to another language, then generate sound accordingly.
 
 ```bash
 pip install deep-translator edge-tts
@@ -39,7 +40,7 @@ python run_tts.py
 ## 3. Video Combine
 > Let static avator be moving along with the sample video that could be anyone's movement.
 
-### a. Get soure of LivePortait
+### a. Get source of LivePortrait
 ```bash
 git clone https://github.com/KwaiVGI/LivePortrait
 cd LivePortrait
@@ -61,9 +62,9 @@ Then, install the corresponding torch version. Here are examples for different C
   pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu121
   # ...
   ```
-  > You can check CUDA version in nvidia-smi, if the version higher than 11.8, just use the # for CUDA 11.8 or above, keep the torch version on 2.1.2, otherwise would be conflict with MuseTalk!!!
+  > You can check your CUDA version using `nvidia-smi`. If your CUDA version is 11.8 or higher, use the installation command for CUDA 11.8 or above, and always keep the torch version at 2.1.2 to avoid conflicts with MuseTalk.
 
-  **Check Numpy, should not be great than 2.0, if so downgrade**
+  **Check Numpy, should not be greater than 2.0, if so downgrade**
   ```
   # check Numpy version
   pip show numpy
@@ -127,7 +128,7 @@ pretrained_weights
 ```
 
 **Rock and Roll**
-> default saved result at LivePortait/animations
+> default saved result at LivePortrait/animations
 ```bash
  python inference.py
 ```
@@ -138,7 +139,7 @@ or with image and driving video path
 python inference.py  --source "assets/examples/source/s12.jpg"   --driving "assets/examples/driving/d13.mp4" 
 ```
 
-## 4. Mouse match
+## 4. Mouth match
 
 ### a. Download code
 ```bash
@@ -157,12 +158,12 @@ pip install -r requirements.txt
 # Make sure torch is 2.1.2, 
 #pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 
-# make sure the verison of mmcv is following:
+# make sure the version of mmcv is following:
 wget https://download.openmmlab.com/mmcv/dist/cu118/torch2.1.0/mmcv-2.1.0-cp310-cp310-manylinux1_x86_64.whl
 
 pip install mmcv-2.1.0-cp310-cp310-manylinux1_x86_64.whl
 
-# Strickly limit version of rest dependencies
+# Strictly limit the versions of the remaining dependencies
 pip install "transformers==4.37.2" "diffusers==0.24.0" "accelerate==0.26.0" "huggingface-hub==0.23.5" "tokenizers==0.15.2" "opencv-python-headless==4.9.0.80" "omegaconf" "imageio-ffmpeg" "av" "scipy"
 
 # Finally install OpenMMLab components
@@ -172,7 +173,7 @@ pip install "mmengine>=0.10.0" "mmpose>=1.1.0" "mmdet>=3.1.0"
 python -c "import torch; import cv2; import numpy; from mmcv.ops import MultiScaleDeformableAttention; print(f'✅ Perfect enviroment: Torch={torch.__version__}, NumPy={numpy.__version__}, MMCV OK')"
 ```
 
-> if now show ' ✅ Perfect enviroment: Torch=2.1.2+cu118, NumPy=1.26.4, MMCV O', please start over!!!
+> if it does not show ' ✅ Perfect enviroment: Torch=2.1.2+cu118, NumPy=1.26.4, MMCV O', please start over!!!
 
 ### c. Download weights
 You can download weights in two ways:
@@ -229,7 +230,7 @@ Finally, these weights should be organized in `models` as follows:
 ```
 
 
-### d. Rock and Roll
+### d. Run the inference
 ```bash
 sh inference.sh v1.5 realtime
 ```
