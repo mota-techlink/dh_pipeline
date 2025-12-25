@@ -1,10 +1,10 @@
-name: Sync Readme to Blog
+name: Sync README to Blog
 
 on:
   push:
     branches: [ main ]
     paths:
-      - 'readme.md' # 仅在 Readme 修改时触发
+      - 'README.md' # 仅在 README 修改时触发
   workflow_dispatch: # 允许在 Actions 页面手动点击运行
 
 jobs:
@@ -31,8 +31,8 @@ jobs:
           echo "---" >> $FILENAME
           echo "" >> $FILENAME
           
-          # 2. 追加 Readme 内容
-          cat readme.md >> $FILENAME
+          # 2. 追加 README 内容
+          cat README.md >> $FILENAME
           
           # 3. 放入临时目录准备推送
           mkdir -p sync_dir
