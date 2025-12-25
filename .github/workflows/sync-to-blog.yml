@@ -21,13 +21,15 @@ jobs:
           FILENAME="dh_pipeline.md"
           
           echo "---" > $FILENAME
-          echo "title: \"开源项目：dh_pipeline 数据流水线方案\"" >> $FILENAME
+          echo "title: \"How to generating Digital Human via opensource project\"" >> $FILENAME
           echo "date: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $FILENAME
-          echo "description: \"同步自 MOTA TECHLINK 开源项目 dh_pipeline 的最新技术白皮书。\"" >> $FILENAME
-          echo "categories: [\"开源项目\", \"技术白皮书\"]" >> $FILENAME
+          echo "description: \"Sync up from MOTA TECHLINK's opensource project: dh_pipeline technical white paper\"" >> $FILENAME
+          echo "categories: [\"Opensource\", \"White paper\"]" >> $FILENAME
           echo "tags: [\"Data Pipeline\", \"IoT\"]" >> $FILENAME
           echo "image: \"/images/blog/project-default.jpg\"" >> $FILENAME # Hugoplate 通常需要封面图          
           echo "canonicalUrl: \"https://github.com/mota-techlink/dh_pipeline\"" >> $FILENAME
+          echo "keywords: [\"Digital Human\", \"LivePortrait\", \"MuseTalk\", \"AI Video Pipeline\", \"MOTA TECHLINK\"]" >> $FILENAME
+          echo "author: \"MOTA TECHLINK\"" >> $FILENAME
           echo "---" >> $FILENAME
           echo "" >> $FILENAME
           

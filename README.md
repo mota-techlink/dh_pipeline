@@ -1,4 +1,11 @@
-# Generating Digital Human Video with open source projects locally
+# MOTA dh_pipeline: All-in-One Digital Human Video Pipeline
+
+A modular and high-efficiency pipeline designed to generate realistic digital human videos locally. It integrates LivePortrait for motion synchronization and MuseTalk for precise lip-sync, powered by MOTA TECHLINK's optimization logic.
+
+
+> The value of this project:
+>
+> Unlike standalone tools, dh_pipeline solves the version conflict between Torch 2.1.2 and MMCV, ensuring a one-click deployment experience.
 
 
 <div align="left">
@@ -313,3 +320,14 @@ Finally, these weights should be organized in `models` as follows:
 ```bash
 sh inference.sh v1.5 realtime
 ```
+
+## ❓ Frequently Asked Questions (FAQ)
+
+**Q: Can this pipeline run on a consumer-grade GPU?**
+A: Yes, it is optimized for NVIDIA GPUs with at least 8GB VRAM (e.g., RTX 3060 and above).
+
+**Q: Does it support real-time generation?**
+A: Currently, it supports high-speed offline inference. Real-time support is in the MOTA TECHLINK roadmap.
+
+**Q: Why use Edge-TTS instead of other providers?**
+A: Edge-TTS provides the best balance between natural prosody and zero-cost local integration.
