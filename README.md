@@ -1,13 +1,9 @@
-# MOTA dh_pipeline: All-in-One Digital Human Video Pipeline
+# All-in-One Digital Human Video Pipeline
 <p align="center">
-  <img src="/assets/images/cover.jpg" alt="image">
+  <img src="assets/images/cover.jpg" alt="MOTA dh_pipeline">
 </p>
+
 A modular and high-efficiency pipeline designed to generate realistic digital human videos locally. It integrates LivePortrait for motion synchronization and MuseTalk for precise lip-sync, powered by MOTA TECHLINK's optimization logic.
-
-
-> The value of this project:
->
-> Unlike standalone tools, dh_pipeline solves the version conflict between Torch 2.1.2 and MMCV, ensuring a one-click deployment experience.
 
 
 <div align="left">
@@ -22,6 +18,11 @@ A modular and high-efficiency pipeline designed to generate realistic digital hu
   <a href="https://zdoc.app/ru/mota-techlink/dh_pipeline">Русский</a> | 
   <a href="https://zdoc.app/en/mota-techlink/dh_pipeline">English</a>
 </div>
+
+> The value of this project:
+>
+> Unlike standalone tools, dh_pipeline solves the version conflict between Torch 2.1.2 and MMCV, ensuring a one-click deployment experience.
+
 
 
 ## 1. Environment preparation

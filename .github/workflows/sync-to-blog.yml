@@ -27,7 +27,7 @@ jobs:
           echo "categories: [\"Opensource\", \"White paper\"]" >> $FILENAME
           echo "tags: [\"Data Pipeline\", \"IoT\"]" >> $FILENAME          
           # 在脚本生成 Front-matter 时
-          echo "image: \"https://github.com/mota-techlink/dh_pipeline/assets/images/cover.jpg\"" >> $FILENAME
+          echo "image: \"https://raw.githubusercontent.com/mota-techlink/dh_pipeline/refs/heads/main/assets/images/cover.jpg\"" >> $FILENAME
           echo "canonicalUrl: \"https://github.com/mota-techlink/dh_pipeline\"" >> $FILENAME
           echo "keywords: [\"Digital Human\", \"LivePortrait\", \"MuseTalk\", \"AI Video Pipeline\", \"MOTA TECHLINK\"]" >> $FILENAME
           echo "author: \"MOTA TECHLINK\"" >> $FILENAME
