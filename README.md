@@ -20,9 +20,10 @@ A modular and high-efficiency pipeline designed to generate realistic digital hu
 </div>
 
 <br/>
+
 > The value of this project:
 >
-> Unlike standalone tools, dh_pipeline solves the version conflict between Torch 2.1.2 and MMCV, ensuring a one-click deployment experience.
+> Unlike standalone tools, dh_pipeline solves the version conflict between Torch 2.1.2 and MMCV, ensuring a one-click deployment experience. 
 <br/>
 
 
