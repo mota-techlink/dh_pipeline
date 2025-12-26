@@ -19,10 +19,11 @@ A modular and high-efficiency pipeline designed to generate realistic digital hu
   <a href="https://zdoc.app/en/mota-techlink/dh_pipeline">English</a>
 </div>
 
+<br/>
 > The value of this project:
 >
 > Unlike standalone tools, dh_pipeline solves the version conflict between Torch 2.1.2 and MMCV, ensuring a one-click deployment experience.
-
+<br/>
 
 
 ## 1. Environment preparation
